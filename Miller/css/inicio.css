@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    border-bottom: 1px solid rgb(155, 26, 26);
+    background-color: rgb(15, 15, 15);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+header .img{
+    padding: 0;
+    margin: 0
+}
+
+.escudo{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    height: 60px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.99vh;
+}
+
+.antaresimg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    display: block;
+}
+
+.AntaDefdiv{
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    display: block;
+    position: relative;
+}
+
+.antares{
+    display: flex;
+    color: gainsboro;
+    font-size: 2em;
+    user-select: none;
+    transition: 1s;
+}
+
+.titulo{
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    font-size: 5rem;
+    background: linear-gradient(to right, rgb(26,30,140) 9%,rgb(26,30,140) 42%,rgb(26,30,140) 42%,rgb(99,0,22) 61%,rgb(99,0,22) 61%,rgb(76,0,5) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;   
+}   
+
+.subtitulo{
+    position: absolute;
+    top: 65vh;
+    left: 15vw;
+    color: gainsboro;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.parrafo{
+    position: absolute;
+    top: 75vh;
+    left: 56.5vh;
+    color: gainsboro;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.inicio-s{
+    position: absolute;
+    left: 43vw;
+    top: 84vh;
+    background-color: transparent;
+    color: gainsboro;
+    font-size: 1.2rem;
+    padding: 14px 24px 14px 24px;
+    border: 2px solid gainsboro;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 30px;
+}
+
+.inicio-s:hover{
+    background-color: gainsboro;
+    color: black;
+    box-shadow: 10px 15px rgb(99,0,22);
+}
+
+.navegacion{
+    margin-left: 0;
+}
+
+.navegacion .a{
+    position: relative;
+    font-size: 1.1em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navegacion .a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, rgb(155,26,26) 28%,rgb(0,6,102) 100%);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navegacion .a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 3px solid rgb(155, 26, 26);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(206, 37, 37);
+    font-weight: 700;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.btnLogin-popup:hover{
+    background: linear-gradient(to right, rgb(155,26,26) 28%,rgb(0,6,102) 100%);;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+.card-wrapper{
+    display: block;
+    width: 100%;
+    margin: 400px 100px 25px;
+    overflow: hidden;
+}
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #600110;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #600110;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.barca{
+    color: blueviolet;
+    background: whitesmoke;
+}
+.card-list .card-link .badge.AntaDef{
+    color: rgb(43, 211, 226);
+    background: whitesmoke;
+}
+.card-list .card-link .badge.lapiña{
+    color: rgb(43, 80, 226);
+    background: whitesmoke;
+}
+.card-list .card-link .badge.yamal{
+    color: rgb(207, 198, 20);
+    background: whitesmoke;
+}
+.card-list .card-link .badge.lewy{
+    color: rgb(43, 46, 226);
+    background: whitesmoke;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #600110;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #600110;
+    transform: rotate(-45deg);
+    transition: 0.4ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #600110;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #600110;
+
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #600110;
+    margin-top: -120px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+        
+    }
+}
+

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sesion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <h2 class="antares">Antares Barranquilla FC<a href="noticias.html"><img src="css/img/antares.png" class="escudo"></a></h2>
+        <nav class="navegacion">
+            <a href="inicio.html" class="a">Inicio</a>
+            <a href="noticias.html" class="a">Principal</a>
+            <a href="calendario.html" class="a">Calendario</a>
+            <a href="#" class="a">Contactos</a>
+            <a href="sesion.html"><button class="btnLogin-popup">Iniciar sesion</button></a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <div class="form-box login">
+            <h2 class="animation" style="--i:0;">Inicio De Sesión</h2>
+            <form action="loginJugadora.php" method="post">
+                <div class="input-box animation" style="--i:1;">
+                    <input type="text" name="email" id="email" required>
+                    <label for="">Nombre de usuario</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:2;">
+                    <input type="password" name="password" id="password" required>
+                    <label for="">Contraseña</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:3">Ingresar</button>
+                <div class="logreg-link animation" style="--i:4;">
+                    <p>¿Desea ingresar cómo administrador? <br><br> <a href="#" class="register-link">Inicio de Administrador</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2 class="animation" style="--i:0; --j:20">¡Bienvenida!</h2>
+            <p class="animation" style="--i:1; --j:21">Inicie sesion para acceder a sus
+                peivilegios cómo jugadora.
+            </p>
+        </div>
+
+        
+        <div class="form-box register">
+            <h2 class="animation" style="--i:17; --j:0">Inicio De Sesión</h2>
+            <form action="loginOwner.php" method="post">
+                <div class="input-box animation" style="--i:18; --j:1">
+                    <input type="text" name="email" id="email" required>
+                    <label for="">Nombre de usuario</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:2">
+                    <input type="password" name="password" id="password" required>
+                    <label for="">Contraseña</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:20; --j:3">Ingresar</button>
+                <div class="logreg-link animation" style="--i:21; --j:4">
+                    <p>¿Desea ingresar cómo jugadora? <br><br> <a href="#" class="login-link">Inicio de Jugadora</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0">¡Bienvenido!</h2>
+            <p class="animation" style="--i:18; --j:1">Inicia sesion para acceder a tus 
+                privilegios cómo administrador.
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+
+        registerLink.onclick = () => {
+            wrapper.classList.add('active');
+        }
+
+        loginLink.onclick = () => {
+        wrapper.classList.remove('active');
+        }
+    </script>
+
+    <script>
+        "Inicio de Sesion exitoso"
+    </script>
+
+    <footer class="pie-pagina">
+        <div class="contacto">
+
+        </div>
+        <div class="subida">
+
+        </div>
+        <div class="tabulador">
+            
+        </div>
+    </footer>
+</body>
+</html>

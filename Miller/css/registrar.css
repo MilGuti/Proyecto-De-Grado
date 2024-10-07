@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    color: #fff;
+    margin-right: 20vh;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    border-bottom: 1px solid rgb(155, 26, 26);
+    background-color: rgb(15, 15, 15);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+header .img{
+    padding: 0;
+    margin: 0
+}
+
+.escudo{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    height: 55px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3vh;
+}
+
+.antares{
+    display: flex;
+    color: gainsboro;
+    font-size: 2em;
+    user-select: none;
+    transition: 1s;
+}
+
+.navegacion{
+    margin-left: 0;
+}
+
+.navegacion .a{
+    position: relative;
+    font-size: 1.1em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navegacion .a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, rgb(155,26,26) 28%,rgb(0,6,102) 100%);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navegacion .a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgb(155, 26, 26);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(206, 37, 37);
+    font-weight: 700;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.btnLogin-popup:hover{
+    background: linear-gradient(to right, rgb(155,26,26) 28%,rgb(0,6,102) 100%);
+    color: whitesmoke;
+}
+
+.btnLogin-popup i {
+    margin: -1px 0 0 10px;
+    float: left;
+    font-size: 1.4em;
+}
+
+
+
+
+
+.titulo{
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    font-size: 5rem;
+    background: linear-gradient(to right, rgb(26,30,140) 9%,rgb(26,30,140) 42%,rgb(26,30,140) 42%,rgb(99,0,22) 61%,rgb(99,0,22) 61%,rgb(76,0,5) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;   
+}   
+
+.container-block{
+    display: block;
+    position: relative;
+    width: 40vw;
+    height: 70vh;
+    top: 40vh;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 12vh;
+    width: 300%;
+    height: 70vh;
+}
+
+.subtitulo{
+    position: relative;
+    top: -14%;
+    left: 38.5%;
+    background: linear-gradient(to right, rgb(155,26,26) 28%, #3e000a 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+}
+
+.container-box{
+    border: 1px solid rgb(155, 26, 26);
+    border-radius: 25px;
+    width: 33.33%;
+    height: 58vh;
+}
+
+.container-box .dos{
+    position: relative;
+    left: 33.33%;
+}
+
+.container-box .tres{
+    position: relative;
+    left: 66.66%;
+}
+
+.box1{
+    position: relative;
+    margin-top: 5%;
+    width: 40%;
+    height: 120%;
+    margin-left: 8%;
+    float: left;
+}
+
+.box2{
+    position: relative;
+    margin-top: 5%;
+    width: 40%;
+    height: 120%;
+    margin-right: 8%;
+    float: right;
+}
+
+label{
+    position: relative;
+    font-size: 1.4rem;
+    background: linear-gradient(to right, rgb(155,26,26) 28%, #3e000a 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;  
+    align-items: center;
+}
+
+.form-group{
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(155, 26, 26);
+    margin-top: 6px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.form-group input{
+    background: transparent;
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(155, 26, 26);
+    height: 80%;
+    width: 95%;
+    left: 2.5%;
+    top: 8%;
+    color: rgb(40, 40, 40);
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(40, 40, 40);
+}
+
+.btn-submit{
+    position: relative;
+    background: transparent;
+    left: -35%;
+    padding: 8px 15px 8px 15px;
+    border: 1px solid rgb(155, 26, 26);
+    font-size: 1.2rem;
+    color: rgb(155, 26, 26);
+}
+
+.btn-submit:hover{
+    background-color: rgb(155, 26, 26);
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 5px rgb(155, 26, 26),
+                0 0 25px rgb(155, 26, 26),
+                0 0 50px rgb(155, 26, 26),
+                0 0 100px rgb(155, 26, 26);
+}
+
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    color: rgb(155, 26, 26);
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: rgb(155, 26, 26);
+    color: whitesmoke;
+
+}
+
+.btn-left{
+    left: 130px;
+}
+
+.btn-right{
+    right: 130px;
+}
+
+.btn-left .bx .bx-chevron-left,
+.btn-right .bx .bx-chevron-right{
+    font-size: 4rem;
+}
